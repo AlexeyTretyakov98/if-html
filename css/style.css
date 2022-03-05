@@ -10,9 +10,11 @@
 body {
   background: #fdfdfd;
 }
+
 .advantages {
   height: 450px;
 }
+
 .highlight {
   width: 100px;
   height: 4px;
@@ -20,12 +22,11 @@ body {
   background: #f5bd41;
   border: 0;
 }
+
 .heading {
   font-weight: 500;
-
   margin: 120px auto 20px;
   text-align: center;
-
   color: #383838;
   font-size: 40px;
 }
@@ -33,10 +34,7 @@ body {
 .down .img-text-v {
   display: inline;
 }
-.down {
-  margin-bottom: 20px;
-  text-align: center;
-}
+
 .img-text {
   font-style: normal;
   font-weight: normal;
@@ -44,9 +42,16 @@ body {
   line-height: 28px;
   text-align: center;
 }
+
 .vectors-img {
-  margin: 0 8px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin:0 auto 48px;
+  display: block;
+  object-position: center;
 }
+
 .img-text-v {
   margin: 0;
   font-style: normal;
@@ -54,9 +59,11 @@ body {
   font-size: 24px;
   line-height: 150%;
 }
+
 .vectors {
   margin: 0;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
