@@ -1,10 +1,9 @@
+@import url("./fonts.css");
 * {
   box-sizing: border-box;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 }
 
 .heading {
-  font-weight: 500;
+  font-family:'Roboto-Medium';
   margin: 120px auto 20px;
   text-align: center;
   color: #383838;
@@ -54,10 +53,10 @@ body {
 
 .img-text-v {
   margin: 0;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 150%;
+  font-family:'Roboto-Light';
+
 }
 
 .vectors {
@@ -68,4 +67,46 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 206px;
+}
+/* footer */
+.footer {
+  background: #10367c;
+  height: 630px;
+}
+
+.footer-about {
+  display: flex;
+}
+
+.about {
+  margin: 120px 180px 120px 120px;
+}
+
+.property {
+  margin: 120px 284px 0 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  font-family:'Roboto-Light';
+}
+
+.otdelni {
+  padding: 0;
+}
+
+.triphouse {
+  margin: 0 120px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  font-family:'Roboto-Light';
+}
+
+.bold {
+  font-weight: bold;
 }
