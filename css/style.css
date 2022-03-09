@@ -6,66 +6,153 @@
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
-
-body {
-  background: #fdfdfd;
-}
-
-.advantages {
-  height: 450px;
-}
-
-.highlight {
-  width: 100px;
-  height: 4px;
-  margin-bottom: 87px;
-  background: #f5bd41;
-  border: 0;
-}
-
-.heading {
-  font-weight: 500;
-  margin: 120px auto 20px;
-  text-align: center;
-  color: #383838;
-  font-size: 40px;
-}
-
-.down .img-text-v {
-  display: inline;
-}
-
-.img-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.vectors-img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin:0 auto 48px;
-  display: block;
-  object-position: center;
-}
-
-.img-text-v {
-  margin: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 150%;
-}
-
-.vectors {
+body{
   margin: 0;
 }
+.content{
+  background-image: url('../img/castelmezzano-1979546 1.png');
+  height:900px ;
 
-.content {
+}
+
+.logo_vector{
+  margin: 0 684px 0 104px;
+  padding: 0;
+}
+
+.block-1{
+  padding-top: 51px;
   display: flex;
-  justify-content: space-between;
-  margin: 0 206px;
+  height: 105px;
+}
+
+.menu{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+
+
+}
+
+a:hover{
+  padding-bottom: 12px;
+  border-bottom: 4px solid #F5BD41;
+  display:inline-block;
+}
+
+
+.a_menu{
+  padding: 0 12px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.img_menu{
+  margin: 0 24px;
+}
+
+.img_menu_acc{
+  margin: 0;
+}
+/* строки */
+.page{
+  margin: 202px 0 -30px 0;
+
+}
+
+.search{
+  padding: 100px 104px 142px;
+  display: flex;
+  align-items: flex-end;
+
+
+}
+
+.discover{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-left: 104px;
+}
+
+label{
+  display:block;
+}
+
+input:hover{
+  border: 4px solid #F5BD41;
+
+
+}
+.search-block{
+  margin: 0;
+
+}
+
+.hotel-search-input{
+  width: 458px;
+  height: 64px;
+  border-style: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+}
+
+.start-search-input{
+  width: 259px;
+  height: 64px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #383838;
+  border-style: none;
+}
+
+.start-search-name{
+  width: 314px;
+  height: 64px;
+  position: relative;
+  border-style: none;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #383838;
+}
+.search-label{
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+
+/* кнопка */
+.btm-search{
+  height: 64px;
+  width: 192px;
+  background-color:  #3077C6;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  position: absolute;
+  margin-left: 1027px;
+}
+
+.icon-svg{
+  margin-left: 585px;
 }
