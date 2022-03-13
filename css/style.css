@@ -23,7 +23,7 @@ body {
 }
 
 .heading {
-  font-family:'Roboto-Medium';
+  font-family:'Roboto';
   margin: 120px auto 20px;
   text-align: center;
   color: #383838;
@@ -55,7 +55,7 @@ body {
   margin: 0;
   font-size: 24px;
   line-height: 150%;
-  font-family:'Roboto-Light';
+  font-family:'Roboto';
 
 }
 
@@ -71,28 +71,25 @@ body {
 /* footer */
 .footer {
   background: #10367c;
-  height: 630px;
 }
 
 .footer-about {
   display: flex;
+  padding-top: 120px;
+  justify-content: space-around;
+  max-width: 1064px;
+  width: 100%;
+  margin: 0;
 }
 
-.about {
-  margin: 120px 180px 120px 120px;
-}
-
-.property {
-  margin: 120px 284px 0 0;
-}
-
-li {
+.footer-text {
   list-style: none;
   margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.25em;
+  line-height: 1em;
   color: #ffffff;
-  font-family:'Roboto-Light';
+  font-family:'Roboto';
+  text-align: left;
 }
 
 .otdelni {
@@ -100,13 +97,14 @@ li {
 }
 
 .triphouse {
-  margin: 0 120px;
-  font-size: 16px;
-  line-height: 16px;
+  margin-left: 104px;
+  padding-bottom: 120px;
+  font-size: 1em;
+  line-height: 4em;
   color: #ffffff;
-  font-family:'Roboto-Light';
+  font-family:'Roboto';
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
