@@ -8,20 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <meta charset="UTF-8" />
-  <title>lesson</title>
 </head>
 <body>
 <section >
-  <div class="content">
-    <div class="block-1">
+  <header class="content">
+    <nav class="block-1">
       <img class="logo_vector" src="./img/logo_vector.svg" alt="logo">
       <div class="menu">
         <a class="a_menu" href="#">Stays</a>
         <a  class="a_menu" href="#">Attractios</a>
-        <img class="img_menu" src="./img/Night.svg" alt="night">
-        <img class="img_menu_acc"  src="./img/AccountCircle.svg" alt="account">
+        <button><img class="img_menu" src="./img/Night.svg" alt="night"></button>
+        <button><img class="img_menu_acc"  src="./img/AccountCircle.svg" alt="account"></button>
       </div>
-    </div>
+    </nav>
     <div class="page">
       <h1 class="discover">Discover stays <br> to live, work or just relax</h1>
       <div class="search">
@@ -29,19 +28,25 @@
           <p class="search-p-text">Your destination or hotel name</p>
           <p class="search-p-text">Check-in — Check-out</p>
         </div>
-        <div class="search-block">
-          <input class="hotel-search-input" type="search" id="hotel-search" name="hotel-search">
+        <form class="search-block">
+          <input class="hotel-search-input" list="hotel" type="search" id="hotel-search" name="hotel-search">
+          <datalist id="hotel">
+            <option value="New York">
+            <option value="MGM Grand">
+            <option value="Circus Circus">
+            <option value="The Venetian">
+          </datalist>
           <input class="start-search-input" type="date" id="start-search" name="start-search">
           <input class="start-search-name" type="text" id="name" name="name" required value="2 Adults — 0 Children — 1 Room">
           <input class="btm-search search-block" type="submit" value="Search">
-        </div >
+        </form >
       </div>
     </div>
     <div class="icon-svg">
       <img class="icon-svg-brend" src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917%201.svg" alt="google-play">
       <img class="icon-svg-brend" src="./img/google-play-badge.svg" alt="App_Store">
     </div>
-  </div>
+  </header>
 </section>
 <section class="advantages">
   <div class="advantages">
