@@ -1,9 +1,61 @@
+@media screen  and (max-width: 575px) {
+  section {
+    width: 100%;
+    overflow-x:hidden
+  }
+
+  .advantages {
+    height: 100%;
+  }
+
+  .navlist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .footer-text {
+    display: none;
+  }
+
+  .footer-text-bold {
+    border-bottom: 1px solid #fdfdfd;
+  }
+
+.footer-about{
+  background: url('../img/logo_vector.svg') no-repeat 50% 0;
+  align-items: end;
+  flex-direction: unset;
+  justify-content: stretch;
+  padding: 0 67px;
+  font-size: 18px;
+  background-size: 150px 30px;
+  height: 130px;
+}
+
+.otdelni{
+  margin: 0;
+}
+
+  .triphouse {
+flex-direction: column;
+    align-items: center;
+    padding-top:32px ;
+  }
+
+  .triphouse-p{
+    line-height: 1.9em;
+    white-space: nowrap;
+    font-size: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
-  max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  max-width: 1140px;
 }
 
 body {
@@ -182,7 +234,7 @@ input{
 
 /* sl c svg*/
 .advantages {
-  height: 28.125em;
+  height: 100%;
 }
 
 .highlight {
@@ -204,6 +256,7 @@ input{
 .navlist-block{
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .navlist {
@@ -275,11 +328,12 @@ li{
 /* footer*/
 .footer {
   background: #10367c;
+  height: 100%;
+  padding: 120px 0;
 }
 
 .footer-about {
   display: flex;
-  padding-top: 120px;
   justify-content: space-around;
   max-width: 1064px;
   width: 100%;
@@ -296,19 +350,33 @@ li{
   text-align: left;
 }
 
+.footer-text-bold {
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 1.25em;
+  line-height: 1em;
+  color: #ffffff;
+  font-family:'Roboto';
+  text-align: left;
+  font-weight: 600;
+}
+
 .otdelni {
   padding: 0;
 }
 
 .triphouse {
-  margin-left: 104px;
-  padding-bottom: 120px;
   font-size: 1em;
   line-height: 4em;
   color: #ffffff;
   font-family:'Roboto';
+  display: flex;
+  justify-content: flex-start;
 }
 
 .bold {
   font-weight: 600;
+}
+.triphouse-p{
+  margin:0 140px ;
 }
