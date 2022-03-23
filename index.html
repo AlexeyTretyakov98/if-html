@@ -11,47 +11,75 @@
   <title>lesson</title>
 </head>
 <body>
+<section >
+  <header class="content">
+    <nav class="block-1">
+      <img class="logo_vector" src="./img/logo_vector.svg" alt="logo">
+      <div class="menu">
+        <a class="a_menu" href="#">Stays</a>
+        <a  class="a_menu" href="#">Attractios</a>
+        <button><img class="img_menu" src="./img/Night.svg" alt="night"></button>
+        <button><img class="img_menu_acc"  src="./img/AccountCircle.svg" alt="account"></button>
+      </div>
+    </nav>
+    <div class="page">
+      <h1 class="discover">Discover stays <br> to live, work or just relax</h1>
+      <div class="search">
+      <!-- change a place of label,when the first screen  will be adaptive-->
+        <div class="search-p">
+          <label for="hotel-search" class="search-p-text">Your destination or hotel name</label>
+          <label for="start-search" class="search-p-text">Check-in — Check-out</label>
+        </div>
+        <form class="search-block">
+          <input class="hotel-search-input" list="hotel" type="search" id="hotel-search" name="hotel-search" placeholder="Add your city">
+          <datalist id="hotel">
+            <option value="New York">
+            <option value="MGM Grand">
+            <option value="Circus Circus">
+            <option value="The Venetian">
+          </datalist>
+          <input class="start-search-input" type="date" id="start-search" name="start-search" >
+          <input class="start-search-name" type="text" id="name" name="name" required value="2 Adults — 0 Children — 1 Room">
+          <input class="btm-search search-block" type="submit" value="Search">
+        </form >
+      </div>
+    </div>
+    <div class="icon-svg">
+      <img class="icon-svg-brend" src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917%201.svg" alt="google-play">
+      <img class="icon-svg-brend" src="./img/google-play-badge.svg" alt="App_Store">
+    </div>
+  </header>
+</section>
 <section class="advantages">
-  <h2 class="heading">What do we offer</h2>
-  <hr class="highlight" />
-  <div class="content">
-    <div class="vectors">
-      <img
-              class="vectors-img"
-              src="./img/headphones.png"
-              alt="Support 24/7"
-      />
-      <p class="img-text-v">Support 24/7</p>
-    </div>
-    <div class="vectors">
-      <img
-              class="vectors-img"
-              src="./img/communicate.png"
-              alt="Communicate directly"
-      />
-      <p class="img-text-v">Communicate directly</p>
-    </div>
-    <div class="vectors">
-      <img
-              class="vectors-img"
-              src="./img/bookonline.png"
-              alt="Book online"
-      />
-      <p class="img-text-v">Book online</p>
-    </div>
-    <div class="vectors">
-      <img
-              class="vectors-img"
-              src="./img/like.png"
-              alt="Real quest reviews"
-      />
-      <p class="img-text-v">Real quest reviews</p>
+  <div class="advantages">
+    <h2 class="heading">What do we offer</h2>
+    <hr class="highlight">
+    <div class="navlist-block">
+      <ul class="navlist">
+        <li >
+          <img class="support" src=img/HeadsetMicOutlined%201.png alt="Icon">
+          <p>Support 24/7</p>
+        </li>
+        <li>
+          <img class="com" src=img/ForumOutlined%201.png alt="Icon">
+          <p>Communicate directly</p>
+        </li>
+        <li >
+          <img class="book" src=img/DevicesOutlined%201.png alt="Icon">
+          <p>Book online</p>
+        </li>
+        <li >
+          <img class="like" src=img/ThumbUpAltOutlined%201.png alt="Icon">
+          <p>Real quest reviews</p>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 <footer>
   <section class="footer" >
     <div class="footer-about">
+
       <ul class="otdelni">
         <li class="bold footer-text">About</li>
         <li class="footer-text">How Triphouse work</li>
