@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <meta charset="UTF-8" />
+  <title>lesson</title>
 </head>
 <body>
 <section >
@@ -24,19 +25,20 @@
     <div class="page">
       <h1 class="discover">Discover stays <br> to live, work or just relax</h1>
       <div class="search">
+      <!-- change a place of label,when the first screen  will be adaptive-->
         <div class="search-p">
-          <p class="search-p-text">Your destination or hotel name</p>
-          <p class="search-p-text">Check-in — Check-out</p>
+          <label for="hotel-search" class="search-p-text">Your destination or hotel name</label>
+          <label for="start-search" class="search-p-text">Check-in — Check-out</label>
         </div>
         <form class="search-block">
-          <input class="hotel-search-input" list="hotel" type="search" id="hotel-search" name="hotel-search">
+          <input class="hotel-search-input" list="hotel" type="search" id="hotel-search" name="hotel-search" placeholder="Add your city">
           <datalist id="hotel">
             <option value="New York">
             <option value="MGM Grand">
             <option value="Circus Circus">
             <option value="The Venetian">
           </datalist>
-          <input class="start-search-input" type="date" id="start-search" name="start-search">
+          <input class="start-search-input" type="date" id="start-search" name="start-search" >
           <input class="start-search-name" type="text" id="name" name="name" required value="2 Adults — 0 Children — 1 Room">
           <input class="btm-search search-block" type="submit" value="Search">
         </form >
