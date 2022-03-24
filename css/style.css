@@ -1,24 +1,3 @@
-@media  screen and (max-width:575px){
-  section{
-    overflow-x:hidden
-  }
-  img{
-    max-width: 100%;
-  }
-  .figcap{
-    display: none;
-  }
-  figure{
-    margin: 0 5px;
-  }
-  .content-home-img{
-    padding-left: 20px;
-  }
-  .button-imgs{
-    transform: translate(475px,-20px);
-    margin: 0;
-  }
-}
 
 @import url("./fonts.css");
 * {
@@ -68,6 +47,7 @@ a{
   text-decoration: none;
   display: inline;
   border-bottom: 0.25em solid transparent;
+  transition: all 0.35s ease;
 }
 
 
@@ -104,6 +84,7 @@ button{
   object-position:  5.405% 87.5%;
   object-fit: none;
 }
+
 /* строки */
 .page{
   margin-top: 202px;
@@ -114,7 +95,6 @@ button{
 }
 
 .discover{
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 3.1em;
@@ -304,6 +284,7 @@ input{
   object-position: 7.143% 92.857%;
   object-fit: none;
 }
+
 .navlist-text{
   display: flex;
   list-style: none;
@@ -317,7 +298,6 @@ input{
 
 li{
   margin: 0;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 1.5em;
@@ -344,25 +324,25 @@ li{
   text-align: center;
   color: #383838;
   font-size: 2.5em;
-  margin-bottom: 105px;
   border: 4px solid transparent;
   position: relative;
 }
 
-.content-home-heading:hover::before {
+.underline:before {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* right: 47%;  */
   top: 72px;
   max-width: 100px;
   width: 100%;
   border-bottom: 6px solid #F5BD41;
 }
+
 img{
   width: 100%;
 }
+
 .content-home-img{
   display: flex;
   margin-bottom: 80px;
@@ -385,17 +365,19 @@ img{
   line-height: 1.75em;
   color: #BFBFBF;
 }
+
 .button-img-s{
   color: rgb(10, 7, 1);
   height: 18px;
   width: 7px;
-  padding-top: 3.5px;
+  padding-top: 3px;
 }
+
 .button-img-s{
   color: rgb(10, 7, 1);
   height: 18px;
   width: 7px;
-  padding-top: 3.5px;
+  padding-top:3px;
 }
 
 .button-imgs{
@@ -436,7 +418,6 @@ img{
   font-size: 1.25em;
   line-height: 1em;
   color: #ffffff;
-  font-family:'Roboto';
   text-align: left;
 }
 
@@ -450,9 +431,30 @@ img{
   font-size: 1em;
   line-height: 4em;
   color: #ffffff;
-  font-family:'Roboto';
 }
 
 .bold {
   font-weight: 600;
+}
+
+@media  screen and (max-width:575px){
+  section{
+    overflow-x:hidden
+  }
+  img{
+    max-width: 100%;
+  }
+  .figcap{
+    display: none;
+  }
+  figure{
+    margin: 0 5px;
+  }
+  .content-home-img{
+    padding-left: 20px;
+  }
+  .button-imgs{
+    transform: translate(475px,-20px);
+    margin: 0;
+  }
 }
