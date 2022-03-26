@@ -2,6 +2,8 @@
 @import url("./fonts.css");
 * {
   box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 body {
@@ -60,6 +62,7 @@ body {
   position: relative;
   cursor: pointer;
 }
+
 .menu a:after{
   content: "";
   background-color: #f66d52
@@ -87,28 +90,26 @@ button{
   margin: 0 24px;
   width: 30px;
   height: 30px;
-  object-position: 35.897% 77.778%;
-  object-fit: none;
 }
 
 .img_menu_acc{
   margin: 0;
   width: 40px;
   height: 40px;
-  object-position:  5.405% 87.5%;
-  object-fit: none;
 }
 
 /* строки */
 .page{
   margin-top: 202px;
 }
+
 .search{
   padding: 100px 104px 126px;
   align-items: flex-end;
 }
 
 .discover{
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 3.1em;
@@ -143,6 +144,7 @@ input:focus{
   line-height: 1.3em;
   color: #383838;
 }
+
 .start-search-input{
   max-width: 18.685em;
   width: 100%;
@@ -181,20 +183,23 @@ input:focus{
   display: unset;
   border: 4px solid transparent;
 }
+
 input{
   background-color: white;
 }
+
 .icon-svg{
   display: flex;
   justify-content: center;
   padding-bottom: 120px;
 }
+
 .icon-svg-brend{
   margin: 0;
   padding: 0 8px;
-  width: 140px;
 }
 /* What do we offer */
+
 .advantages {
   height: 28.125em;
 }
@@ -212,41 +217,49 @@ input{
   display: flex;
   justify-content: flex-start;
 }
+
 .search-p-text{
   margin: 0;
   padding-right: 210px;
 }
-.search-block{
+
+.search-block {
   margin: 0;
   display: flex;
   background-color: #fdfdfd;
   border-radius: 8px;
 }
 
+.highlight {
+  width: 100px;
+  height: 4px;
+  margin-bottom: 87px;
+  background: #f5bd41;
+  border: 0;
+}
+
 .heading {
-  font-weight: 500;
+  font-family:'Roboto', sans-serif;
   margin: 120px auto 20px;
   text-align: center;
   color: #383838;
   font-size: 2.5em;
-  text-decoration: none ;
-  border-bottom: 4px solid transparent;
 }
 
 .navlist-block{
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .navlist {
-  position: absolute;
   display: flex;
+  max-width: 1052px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
   list-style: none;
 }
+
 .navlist .support {
   width: 100px;
   height: 100px;
@@ -290,19 +303,9 @@ input{
   object-fit: none;
 }
 
-.navlist-text{
-  display: flex;
-  list-style: none;
-  max-width: 1435px;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 0;
-  object-position: 7.143% 92.857%;
-  object-fit: none;
-}
-
 li{
   margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5em;
@@ -310,10 +313,12 @@ li{
   text-align: center;
   color: #383838;
 }
+
 /* Homes guests loves */
 .homes-bg{
   background-color: #EAF0F9;
 }
+
 .heading-homes{
   height: 51.75em;
   align-items: center;
@@ -345,10 +350,7 @@ li{
 }
 
 figure{
-margin: 0 8px;
-}
-img{
-  width: 100%;
+  margin: 0 8px;
 }
 
 .content-home-img{
@@ -402,6 +404,7 @@ img{
   text-align: center;
   box-shadow: 2px 1px 5px;
 }
+
 /* footer*/
 footer{
   background-color: #10367c;
@@ -429,6 +432,7 @@ footer{
   font-size: 1.25em;
   line-height: 1em;
   color: #ffffff;
+  font-family:'Roboto', sans-serif;
   text-align: left;
 }
 
@@ -454,6 +458,48 @@ footer{
   display: flex;
   justify-content: flex-start;
   margin-left: 6%;
+  font-family:'Roboto', sans-serif;
+}
+
+/* footer */
+.footer {
+  background: #10367c;
+}
+
+.footer-about {
+  display: flex;
+  padding-top: 120px;
+  justify-content: space-around;
+  max-width: 1064px;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-text {
+  list-style: none;
+  margin-bottom: 24px;
+  font-size: 1.25em;
+  line-height: 1em;
+  color: #ffffff;
+  font-family:'Roboto', sans-serif;
+  text-align: left;
+}
+
+.otdelni {
+  padding: 0;
+}
+
+.triphouse {
+  margin-left: 104px;
+  padding-bottom: 120px;
+  font-size: 1em;
+  line-height: 4em;
+  color: #ffffff;
+  font-family:'Roboto', sans-serif;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .triphouse-p{
@@ -471,40 +517,64 @@ footer{
   }
   /*Discover stays to live, work or just relax*/
   #advantages {
-    height: 910px;
+    height: 710px;
     margin-bottom: 40px;
   }
 
   .navlist {
     flex-direction: column;
   }
-/*<!--Homes guests loves-->*/
+  /*<!--Homes guests loves-->*/
   #heading-homes{
     padding: 0;
     max-height: 354px;
   }
+
   .figcap{
     display: none;
   }
+
   .content-home-img-fig{
-padding-top: 8px;
+    padding-top: 8px;
     font-size: 12px;
     line-height: 14px;
   }
+
   .content-home-img-p{
-margin: 0;
+    margin: 0;
     font-size: 12px;
     line-height: 14px;
   }
-.content-home-heading{
-  margin: 40px 0 23px;
-}
+
+  .content-home-heading{
+    font-weight: 500;
+    margin: 24px auto 34px;
+    text-align: center;
+    color: #383838;
+    font-size: 2.5em;
+    border: 4px solid transparent;
+    position: relative;
+  }
+
   figure{
     margin: 0 5px;
   }
+
+ .underline:before{
+   content: "";
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 72px;
+   max-width: 100px;
+   width: 100%;
+   border-bottom: 6px solid #ffffff;
+  }
+
   .content-home-img{
     padding-left: 20px !important;
   }
+
   .button-imgs{
     transform: translateX(-53%) !important;
     top: 62px;
@@ -564,9 +634,9 @@ margin: 0;
     left: 93.6%;
     transform: translateY(308%);
   }
-.figcap-768{
-  display: none;
-}
+  .figcap-768{
+    display: none;
+  }
 
 }
 @media  screen and (max-width: 992px) {
