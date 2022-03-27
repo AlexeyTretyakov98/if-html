@@ -8,15 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <meta charset="UTF-8" />
+  <title>lesson</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section >
+<!--Discover stays to live, work or just relax-->
+<section  class="discover-bg">
   <header class="content">
     <nav class="block-1">
       <img class="logo_vector" src="./img/css_sprites_logo.png" alt="logo">
       <div class="menu">
+
         <a class="a_menu" href="#">Stays</a>
         <a  class="a_menu" href="#">Attractios</a>
+
         <button><img class="img_menu" src="./img/css_sprites_logo.png" alt="night"></button>
         <button><img class="img_menu_acc"  src="./img/css_sprites_logo.png" alt="account"></button>
       </div>
@@ -38,7 +43,7 @@
           </datalist>
           <input class="start-search-input" type="date" id="start-search" name="start-search">
           <input class="start-search-name" type="text" id="name" name="name" required value="2 Adults — 0 Children — 1 Room">
-          <input class="btm-search search-block" type="submit" value="Search">
+          <input class="btm-search-input" type="submit" value="Search">
         </form >
       </div>
     </div>
@@ -48,33 +53,37 @@
     </div>
   </header>
 </section>
-<section class="advantages">
-  <div class="advantages">
-    <h2 class="content-home-heading">What do we offer</h2>
-    <div class="navlist-block">
-      <ul class="navlist">
-        <li >
-          <img class="support" src=img/css_sprites.png alt="Icon">
-          <p>Support 24/7</p>
-        </li>
-        <li>
-          <img class="com" src=img/css_sprites.png alt="Icon">
-          <p>Communicate directly</p>
-        </li>
-        <li >
-          <img class="book" src=img/css_sprites.png alt="Icon">
-          <p>Book online</p>
-        </li>
-        <li >
-          <img class="like" src=img/css_sprites.png alt="Icon">
-          <p>Real quest reviews</p>
-        </li>
-      </ul>
+<!--What do we offer-->
+<section >
+  <div class="advantages-width">
+    <div class="advantages" id="advantages">
+      <h2 class="content-home-heading underline" >What do we offer</h2>
+      <div class="navlist-block">
+        <ul class="navlist">
+          <li >
+            <img class="support" src=img/css_sprites.png alt="Icon">
+            <p>Support 24/7</p>
+          </li>
+          <li>
+            <img class="com" src=img/css_sprites.png alt="Icon">
+            <p>Communicate directly</p>
+          </li>
+          <li >
+            <img class="book" src=img/css_sprites.png alt="Icon">
+            <p>Book online</p>
+          </li>
+          <li >
+            <img class="like" src=img/css_sprites.png alt="Icon">
+            <p>Real quest reviews</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
-<section>
-  <div class="heading-homes">
+<!--Homes guests loves-->
+<section class="homes-bg">
+  <div class="heading-homes" id="heading-homes">
     <div class="content-homes">
       <h2 class="content-home-heading">Homes guests loves</h2>
       <div class="content-home-img">
@@ -85,55 +94,114 @@
         </figure>
         <figure>
           <img src="img/Rectangle 49.png" alt="Apartment Sunshine">
-          <figcaption class="content-home-img-fig">Apartment Sunshine</figcaption>
-          <p class="content-home-img-p">Santa Cruz de Tenerife, <br> Spain</p>
+          <figcaption class="content-home-img-fig" >Apartment Sunshine</figcaption>
+          <p class="content-home-img-p" >Santa Cruz de Tenerife, <br> Spain</p>
         </figure>
-        <figure>
+        <figure class="figcap-768">
           <img  class="figcap" src="img/Rectangle 50.png" alt=" Villa Kunerad">
           <figcaption class="content-home-img-fig figcap"> Villa Kunerad</figcaption>
           <p class="content-home-img-p figcap">Vysokie Tatry, Slowakia</p>
         </figure>
-        <figure>
+        <figure class="figcap-1220">
           <img class="img-button figcap" src="img/Rectangle 51.png" alt="Hostel Friendship">
           <figcaption class="content-home-img-fig figcap ">Hostel Friendship</figcaption>
-          <p class="content-home-img-p figcap">Berlin, Germany</p>
+          <p class="content-home-img-p ">Berlin, Germany</p>
         </figure>
-        <button class="button-imgs"><img class="button-img-s " src="img/Polygon 2.svg" alt=""></button>
+        <button class="button-imgs" id="button-imgs"><img class="button-img-s " src="img/Polygon 2.svg" alt=""></button>
       </div>
     </div>
   </div>
-  </div>
 </section>
-<footer>
-  <section class="footer" >
-    <div class="footer-about">
+<!--The best destinations-->
+<section>
+  <div class="heading-homes-place">
+    <div class="content-homes">
+      <h2 class="content-home-heading" id="content-home-heading">The best destinations</h2>
+      <div class="tabs">
+        <button class="tabs-button">Regions</button>
+        <button class="tabs-button">Cities</button>
+        <button class="tabs-button button-places"></button>
+      </div>
+      <div class="content-home-img" id="content-home-img">
+        <figure class="container-btn">
+          <img class="container-img"  id="container-btn" src="img/Rectangle 52.png" alt="Maldives">
+          <button class="btn" >Book now</button>
+          <figcaption class="content-home-img-fig">Maldives</figcaption>
+        </figure>
+        <figure>
+          <img class="" src="img/Rectangle 53.png" alt="Spain">
+          <figcaption class="content-home-img-fig ">Spain</figcaption>
+        </figure>
+        <figure class="figcap-768">
+          <img  class="figcap" src="img/Rectangle 54.png" alt="Norway">
+          <figcaption class="content-home-img-fig figcap"> Norway</figcaption>
+        </figure>
+        <figure class="figcap-1220">
+          <img class="img-button figcap figcap-m" src="img/Rectangle 55.png" alt="Island">
+          <figcaption class="content-home-img-fig figcap figcap-m ">Island</figcaption>
+        </figure>
+        <button class="content-button-imgs" id="content-button-imgs"><img class="button-img-s-s " src="img/Polygon 2.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
 
-      <ul class="otdelni">
-        <li class="bold footer-text">About</li>
-        <li class="footer-text">How Triphouse work</li>
-        <li class="footer-text" >Careers</li>
-        <li class="footer-text" >Privacy</li>
-        <li class="footer-text" >Terms</li>
-      </ul>
-      <ul class="otdelni">
-        <li class="bold footer-text">Property types</li>
-        <li class="footer-text" >Guest houses</li>
-        <li class="footer-text" >Hotels</li>
-        <li class="footer-text" >Apartments</li>
-        <li class="footer-text" >Villas</li>
-        <li class="footer-text" >Holiday homes</li>
-        <li class="footer-text" >Hostels</li>
-      </ul>
-      <ul class="otdelni">
-        <li class="bold footer-text">Support</li>
-        <li class="footer-text" >Contact Customer Service</li>
-        <li class="footer-text" >FAQ</li>
-      </ul>
+</section>
+<!--Sign up-->
+<section>
+<aside class="profile-bg">
+  <div class="profile" >
+  <button class="profile-user"><img src="img/user.png" alt=""></button>
+  <div class="profile-p-b">
+    <h3>Sign up and get 20% off your first booking</h3>
+    <button class="profile-sing-button">Sign up</button>
+  </div>
+  <button class="profile-clouse"><img src="img/Vector.svg" alt=""></button>
+  </div>
+</aside>
+
+  <aside class="mob-profile-bg">
+    <div class="mob-profile" >
+    <button class="mob-profile-user"><img class="mob-profile-user-i" src="img/Vector.png" alt=""></button>
+    <img class="tripHouseMob-img" src="img/tripHouseMob.svg" alt="tripHouseMob">
+    <div class="mob-profile-h-a">
+      <h3 class="mob-profile-h" >Sign up in the app and get 20% off your first booking</h3>
+      <a class="mob-profile-a">Install</a>
     </div>
-    <div class="triphouse">
-      <p>&#169;2020 Triphouse, Inc.All rights reserved</p>
     </div>
-  </section>
+  </aside>
+</section>
+<!--footer-->
+<footer>
+  <div class="footer" >
+    <div class="fotter-width">
+      <div class="footer-about" >
+        <ul class="otdelni">
+          <li class="bold-footer-text">About</li>
+          <li class="footer-text">How Triphouse work</li>
+          <li class="footer-text" >Careers</li>
+          <li class="footer-text" >Privacy</li>
+          <li class="footer-text" >Terms</li>
+        </ul>
+        <ul class="otdelni">
+          <li class="bold-footer-text">Property types</li>
+          <li class="footer-text" >Guest houses</li>
+          <li class="footer-text" >Hotels</li>
+          <li class="footer-text" >Apartments</li>
+          <li class="footer-text" >Villas</li>
+          <li class="footer-text" >Holiday homes</li>
+          <li class="footer-text" >Hostels</li>
+        </ul>
+        <ul class="otdelni">
+          <li class="bold-footer-text">Support</li>
+          <li class="footer-text" >Contact Customer Service</li>
+          <li class="footer-text" >FAQ</li>
+        </ul>
+      </div>
+      <div class="triphouse">
+        <p class="triphouse-p">&#169;2020 Triphouse, Inc.All rights reserved</p>
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
