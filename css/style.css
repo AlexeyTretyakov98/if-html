@@ -212,10 +212,10 @@ input{
 }
 
 .highlight {
- width: 100px;
+  width: 100px;
   height: 4px;
   margin-bottom: 87px;
- background: #f5bd41;
+  background: #f5bd41;
   border: 0;
 }
 
