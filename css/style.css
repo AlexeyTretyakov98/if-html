@@ -941,17 +941,20 @@ display: none;
 @media screen and (max-width: 3645px) and (min-width:575px) {
 
   /* footer */
-  .triphouse{
+  .triphouse {
     padding: 0 1% 120px;
   }
+
   /*Homes guests loves-*/
-  .heading-homes{
+  .heading-homes {
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
   }
-  .mob-profile{
+
+  .mob-profile {
     display: none;
   }
 
-.bold {
-  font-weight: 600;
+  .bold {
+    font-weight: 600;
+  }
 }
