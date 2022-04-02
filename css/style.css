@@ -13,7 +13,13 @@ body {
 }
 /*Discover stays to live, work or just relax*/
 .discover-bg{
-  background: url('../img/castelmezzano-1979546 1.png')   50% 0/auto auto no-repeat;
+  background-image: url("../img/bg-main-section.svg");
+  /*background-position: top center;*/
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  width: 100%;
+  color: #ffffff;
+  min-height:100vh;
 }
 
 .content{
