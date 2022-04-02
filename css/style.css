@@ -3,6 +3,7 @@
   box-sizing: border-box;
   /*max-width: 1440px;*/
   margin: 0 auto;
+
 }
 
 body {
@@ -606,6 +607,164 @@ margin: -5px;
   margin-bottom: 160px;
   padding: 24px;
 }
+
+/*<!-- Guests reviews --*/
+
+.guests-bg{
+  background-color: #fff;
+}
+
+.reviews{
+  max-width: 1440px;
+  margin: 0  auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.reviews-width{
+  max-width: 1232px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content-reviews{
+  max-width: 400px;
+  background: #EAF0F9;
+}
+
+.location{
+  display: flex;
+  width: 400px;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.location-p{
+  margin: 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location-p p{
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077C6;
+}
+
+.estimation{
+  text-align: end;
+  padding-right: 24px;
+}
+
+.estimation p{
+  color:#BFBFBF;
+}
+
+.hotel{
+  position: relative;
+  margin: 0;
+}
+
+.hotel img{
+  vertical-align: middle;
+}
+.hotel figcaption{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(56, 56, 56, 0.7);
+  color:#FFFFFF;
+  width: 100%;
+  max-width: 400px;
+  height: 48px;
+}
+
+.hotel p{
+  padding: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.users-data{
+  padding-left: 21px;
+  margin: 0;
+}
+
+.users-reviews{
+  display: flex;
+  margin-top: 30px;
+  padding-left: 29px;
+}
+
+.users-reviews img{
+  margin: 0;
+}
+
+/*figure img{*/
+/*  max-width: 100%;*/
+/*  width: 400px;*/
+/*}*/
+
+.users-reviews h4{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+  padding: 8px 0;
+}
+
+.users-reviews figure{
+  display: flex;
+  margin: 0;
+}
+
+.users-country figcaption{
+  color: #BFBFBF;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 6px;
+}
+
+.users-country-reviews{
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 21px;
+  color: #383838;
+  padding: 22px 24px 66px 24px;
+}
+
+.button-img-s{
+  color: rgb(10, 7, 1);
+  height: 18px;
+  width: 7px;
+  padding-top: 3px;
+}
+
+.button-imgss{
+  position: absolute;
+  right: -1.5%;
+  transform :translateY(450%);
+  font-size: 16px;
+  padding: 4px 4px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  background: #EAF0F9;
+  box-shadow:2px 5px 5px ;
+}
+
 /* footer*/
 footer{
   background-color: #10367c;
@@ -673,8 +832,8 @@ footer{
     overflow-x:hidden;
     overflow-y: hidden;
   }
-  figure img{
-    width: 156px;
+  .content-home-img figure img{
+    width: 180px;
   }
   /*Discover stays to live, work or just relax*/
   #advantages {
@@ -733,16 +892,45 @@ footer{
     border-bottom: 6px solid #ffffff;
   }
 
-  .content-home-img{
-    padding-left: 20px !important;
-  }
+
 
   .button-imgs{
-    transform: translateX(-28%) !important;
-    top: 62px;
+    transform: translateX(5%) !important;
+    top: 78px;
     width: 28px;
     height: 28px;
   }
+
+  .fig-575{
+    display: none;
+  }
+
+  .button-imgss{
+    display: none;
+  }
+
+  #users-country-reviews{
+    padding: 22px 24px 32px 24px;
+  }
+
+  .btn-group{
+display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  #rb{
+    width: 9px;
+  }
+
+  .btn-group input{
+    margin: 0;
+  }
+
+  .btn-group label{
+    margin: 0;
+  }
+
   /* footer */
   .footer-text {
     display: none;
@@ -803,8 +991,8 @@ footer{
   width: 28px !important;
   height: 28px !important;
   top:34%;
-  left: 91.6% !important;
-  transform: translateY(-6%) !important;
+  left: 93.6% !important;
+  transform: translateY(31%) !important;
 }
 
 .content-home-img{
@@ -823,9 +1011,7 @@ display: none;
     overflow-y:hidden
   }
   /*Homes guests loves-*/
-  .content-home-img{
-    padding: 0 10px;
-  }
+
   #button-imgs{
     left: 93.6%;
     transform: translateY(308%);
@@ -940,6 +1126,11 @@ display: none;
   /* footer */
   .footer-about{
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+
+  #content-reviews{
+
   }
 
 }
