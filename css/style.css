@@ -1,9 +1,10 @@
-
 @import url("./fonts.css");
 * {
   box-sizing: border-box;
   /*max-width: 1440px;*/
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 body {
@@ -13,9 +14,14 @@ body {
   font-style: normal;
 }
 /*Discover stays to live, work or just relax*/
-
 .discover-bg{
-  background: url('../img/castelmezzano-1979546 1.png') center no-repeat;
+  background-image: url("../img/bg-main-section.svg");
+  /*background-position: top center;*/
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  width: 100%;
+  color: #ffffff;
+  min-height:100vh;
 }
 
 .content{
@@ -63,20 +69,17 @@ body {
   cursor: pointer;
 }
 
-.menu a:after{
-  content: "";
-  background-color: #f66d52
-}
-
-.menu a:hover::before{
+.menu a:before{
   content: "";
   position: absolute;
   width: 100%;
   top: 42px;
-  right: 45px;
-  transform: translateX(50%);
-  border-bottom: 0.25em solid rgba(245, 189, 65, 1);
-  transition: all .3s ease;
+  border-bottom: 0.25em solid transparent;
+  transition: border-bottom-color .9s ease;
+}
+
+.menu a:hover::before{
+  border-bottom: 0.25em solid #F5BD41;
 }
 
 button{
@@ -113,7 +116,6 @@ button{
 }
 
 .discover{
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 3.1em;
@@ -216,15 +218,17 @@ input{
 .search-p{
   font-size: 1.1em;
   line-height: 1.3em;
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #FFFFFF;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  max-width: 640px;
+  width: 100%;
+
 }
 
 .search-p-text{
   margin: 0;
-  padding-right: 210px;
 }
 
 .search-block {
@@ -243,7 +247,7 @@ input{
 }
 
 .heading {
-  font-family:'Roboto', sans-serif;
+  font-weight: 500;
   margin: 120px auto 20px;
   text-align: center;
   color: #383838;
@@ -268,7 +272,7 @@ input{
   width: 100px;
   height: 100px;
   margin: 0;
-  object-position: 7.143% 92.857%;
+  object-position: 7% 92%;
   object-fit: none;
 }
 
@@ -276,7 +280,7 @@ input{
   width: 100px;
   height: 100px;
   margin: 0;
-  object-position: 92.857% 7.143%;
+  object-position: 92% 7%;
   object-fit: none;
 }
 
@@ -284,7 +288,7 @@ input{
   width: 100px;
   height: 100px;
   margin: 0;
-  object-position: 7.143% 7.143%;
+  object-position: 7% 7%;
   object-fit: none;
 }
 
@@ -292,7 +296,7 @@ input{
   width: 100px;
   height: 100px;
   margin: 0;
-  object-position: 92.857% 92.857%;
+  object-position: 92% 92%;
   object-fit: none;
 }
 
@@ -303,13 +307,12 @@ input{
   width: 100%;
   justify-content: space-evenly;
   padding: 0;
-  object-position: 7.143% 92.857%;
+  object-position: 7% 92%;
   object-fit: none;
 }
 
 li{
   margin: 0;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5em;
@@ -330,6 +333,7 @@ li{
   justify-content: space-evenly;
   max-width: 1440px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .content-home-heading{
@@ -341,6 +345,18 @@ li{
   border: 4px solid transparent;
   position: relative;
 }
+
+.content-home-heading:hover::before{
+  border-bottom: 4px solid #F5BD41;
+  width: 100%;
+  max-width: 100px;
+  position: absolute;
+  left: 50%;
+  top:72px;
+  transform: translateX(-50%);
+  content: "";
+}
+
 
 .underline:before {
   content: "";
@@ -359,9 +375,9 @@ figure{
 
 .content-home-img{
   display: flex;
-  margin-bottom: 47px;
   position: relative;
   width: 100%;
+  margin-bottom: 208px;
 }
 
 .content-home-img-fig{
@@ -409,6 +425,187 @@ figure{
   box-shadow: 2px 1px 5px;
 }
 
+/* The best destinations */
+
+.heading-homes-place{
+  align-items: center;
+  display: flex;
+  background: #FFFFFF;
+}
+
+.tabs{
+  display: flex;
+  background-color: #f2f2f3;
+  justify-content: flex-start;
+  max-width: 717px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 64px 0;
+}
+.tabs-button{
+  margin: 0;
+  height: 64px;
+  background-color: #F3F3F4;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  color: #383838;
+  text-align: center;
+  max-width: 239px;
+  width: 100%;
+}
+
+.button-places:before {
+  content: "Places of interest"
+}
+
+.tabs-button:hover{
+  background-color: #3077C6;
+  color: #ffffff;
+}
+
+.tabs-button:focus{
+  background-color: #3077C6;
+  color: #ffffff;
+}
+
+.container-btn{
+  position: relative;
+}
+
+.container-img{
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+  /* opacity: 0.5;*/
+}
+
+.btn{
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  background-color: #FFFFFF;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #3077C6;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  color: #3077C6;
+}
+/*sing up*/
+
+.mob-profile-bg{
+  background-color: #EAF0F9;
+}
+
+.profile{
+  background-color: #EAF0F9;
+  max-width: 1232px;
+  height: 200px;
+  display: flex;
+  width: 100%;
+}
+
+.profile-user{
+  margin: 0;
+  padding-left: 24px;
+}
+
+.profile-p-b{
+  margin: auto 0;
+  padding-left: 40px;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 21px;
+  color: #383838;
+}
+
+.profile-sing-button{
+  background-color: #FFFFFF;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  width: 128px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #3077C6;
+}
+
+/*sing up mob*/
+.mob-profile{
+  max-width: 360px;
+  height: 106px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.mob-profile-user-i{
+  height: 16px;
+  margin: 0 16px;
+}
+.tripHouseMob-img{
+  height: 58px;
+}
+
+.mob-profile-h-a{
+  display: flex;
+}
+
+.mob-profile-h{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #383838;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.mob-profile-a{
+  margin-right: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3077C6;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.content-button-imgs{
+  position: absolute;
+  right: 50%;
+  transform: translateY(1050%);
+  background-color: #EAF0F9;
+  font-size: 16px;
+  padding: 4px 4px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 5px 5px ;
+}
+
+.button-img-s-s{
+  transform: rotate(90deg);
+margin: -5px;
+}
+
+.profile-clouse{
+  margin-right: 0;
+  margin-bottom: 160px;
+  padding: 24px;
+}
 /* footer*/
 footer{
   background-color: #10367c;
@@ -450,8 +647,9 @@ footer{
   font-weight: 600;
 }
 
-.otdelni {
+.footet-column {
   padding: 0;
+  margin: 0;
 }
 
 .triphouse {
@@ -465,46 +663,6 @@ footer{
   font-family:'Roboto', sans-serif;
 }
 
-/* footer */
-.footer {
-  background: #10367c;
-}
-
-.footer-about {
-  display: flex;
-  padding-top: 120px;
-  justify-content: space-around;
-  max-width: 1064px;
-  width: 100%;
-  margin: 0;
-}
-
-.footer-text {
-  list-style: none;
-  margin-bottom: 24px;
-  font-size: 1.25em;
-  line-height: 1em;
-  color: #ffffff;
-  font-family:'Roboto', sans-serif;
-  text-align: left;
-}
-
-.otdelni {
-  padding: 0;
-}
-
-.triphouse {
-  margin-left: 104px;
-  padding-bottom: 120px;
-  font-size: 1em;
-  line-height: 4em;
-  color: #ffffff;
-  font-family:'Roboto', sans-serif;
-}
-
-.bold {
-  font-weight: 600;
-}
 
 .triphouse-p{
   margin: 0;
@@ -515,9 +673,8 @@ footer{
     overflow-x:hidden;
     overflow-y: hidden;
   }
-  img{
+  figure img{
     width: 156px;
-    height: 156px;
   }
   /*Discover stays to live, work or just relax*/
   #advantages {
@@ -552,27 +709,28 @@ footer{
 
   .content-home-heading{
     font-weight: 500;
-    margin: 24px auto 34px;
+    margin: 24px auto 37px;
     text-align: center;
     color: #383838;
-    font-size: 2.5em;
     border: 4px solid transparent;
     position: relative;
+    font-size: 28px;
+    line-height: 33px;
   }
 
   figure{
     margin: 0 5px;
   }
 
- .underline:before{
-   content: "";
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 72px;
-   max-width: 100px;
-   width: 100%;
-   border-bottom: 6px solid #ffffff;
+  .underline:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 72px;
+    max-width: 100px;
+    width: 100%;
+    border-bottom: 6px solid #ffffff;
   }
 
   .content-home-img{
@@ -580,7 +738,7 @@ footer{
   }
 
   .button-imgs{
-    transform: translateX(-53%) !important;
+    transform: translateX(-28%) !important;
     top: 62px;
     width: 28px;
     height: 28px;
@@ -621,8 +779,42 @@ footer{
     white-space: nowrap;
     font-size: 0.8rem;
     padding: 0 10px;
-
   }
+
+  .tabs-button{
+    margin: 0;
+    height: 64px;
+    background-color: #ffffff;
+    border: 1px solid  #F3F3F4;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.75em;
+    color: #383838;
+    text-align: center;
+    width: 30%;
+  }
+  .tabs{
+    background-color: transparent;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+#content-button-imgs{
+  width: 28px !important;
+  height: 28px !important;
+  top:34%;
+  left: 91.6% !important;
+  transform: translateY(-6%) !important;
+}
+
+.content-home-img{
+  margin-bottom: 40px !important;
+}
+/*sing up*/
+  .profile{
+display: none;
+  }
+
 }
 @media  screen and (max-width: 768px) {
   section {
@@ -642,7 +834,59 @@ footer{
     display: none;
   }
 
+    .button-places:before {
+      content: "Places"
+    }
+
+  .container-img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  .btn{
+    display: none;
+  }
+
+  .content-button-imgs{
+    position: absolute;
+    background: #EAF0F9;
+    font-size: 16px;
+    padding: 4px 4px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 5px 5px ;
+    left: 93.6% !important;
+    transform: translateY(311%) !important;
+  }
+
+.button-img-s-s{
+  transform: rotate(360deg);
+  height: 18px;
+  width: 7px;
+  padding-bottom: 3px;
 }
+
+  .tabs{
+    background-color: transparent;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 24px 0;
+    padding: 0 17px;
+  }
+
+  .figcap{
+    display: none;
+  }
+
+  .tabs:focus{
+    background-color: #3077C6;
+  }
+  }
+
 @media  screen and (max-width: 992px) {
 
   section {
@@ -669,6 +913,22 @@ footer{
     margin: 0 10%;
   }
 
+  .content-button-imgs{
+  left: 95.6%;
+  transform: translateY(308%);
+}
+  .button-img-s-s {
+    transform: rotate(360deg);
+    margin: -5px;
+  }
+  .figcap-768 {
+    display: none;
+  }
+
+  figure .img{
+    width: 60%;
+  }
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -684,18 +944,23 @@ footer{
 
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 3645px) and (min-width:575px) {
 
   /* footer */
-  .triphouse{
+  .triphouse {
     padding: 0 1% 120px;
   }
+
   /*Homes guests loves-*/
-  .heading-homes{
+  .heading-homes {
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
   }
 
+  .mob-profile {
+    display: none;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
 }
-
-
-
