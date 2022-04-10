@@ -13,37 +13,47 @@
 <body>
 <!--Discover stays to live, work or just relax-->
 <section  class="discover-bg">
-  <header class="content">
+  <header class="content" id="content">
     <nav class="block-1">
       <img class="logo_vector" src="./img/css_sprites_logo.png" alt="logo">
+      <img class="logo_vector-mob" src="./img/logo_vector-mob.svg" alt="TripHouse">
       <div class="menu">
         <a class="a_menu" href="#">Stays</a>
         <a  class="a_menu" href="#">Attractios</a>
+        <div class="icon__col-burger">
+          <img class="burger" src="./img/burger.svg" alt="burger">
+        </div>
         <button><img class="img_menu" src="./img/css_sprites_logo.png" alt="night"></button>
         <button><img class="img_menu_acc"  src="./img/css_sprites_logo.png" alt="account"></button>
       </div>
     </nav>
     <div class="page">
-      <h1 class="discover">Discover stays <br> to live, work or just relax</h1>
-      <div class="search">
-        <!-- change a place of label,when the first screen  will be adaptive-->
-        <div class="search-p">
-          <label for="hotel-search" class="search-p-text">Your destination or hotel name</label>
-          <label for="start-search" class="search-p-text">Check-in — Check-out</label>
-        </div>
-        <form class="search-block">
-          <input class="hotel-search-input" list="hotel" type="search" id="hotel-search" name="hotel-search">
-          <datalist id="hotel">
-            <option value="New York">
-            <option value="MGM Grand">
-            <option value="Circus Circus">
-            <option value="The Venetian">
-          </datalist>
-          <input class="start-search-input" type="date" id="start-search" name="start-search">
-          <input class="start-search-name" type="text" id="name" name="name" required value="2 Adults — 0 Children — 1 Room">
-          <input class="btm-search-input" type="submit" value="Search">
-        </form >
-      </div>
+      <h1 class="discover" id="discover">Discover stays <br> to live, work or just relax</h1>
+      <article class="container--form col-md-12 col-lg-12 col-12">
+        <form action="/" method="post">
+          <div class="row--form">
+            <div class="input--place--wrap">
+              <input type="text" name="place" class="col--place col-md-12 col-lg-12 col-12" id="col--place" required/>
+              <label class="label--place" for="col--place">Your destination or hotel name</label>
+            </div>
+            <div class="input--date--wrap">
+              <div class="label--date--wrap-first">
+                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                       class="col--date col-md-12 col-lg-12 col-12" id="col--date-first" required/>
+                <label class="label--date--first" for="col--date-first">Check-in</label>
+              </div>
+              <div class="label--date--wrap-second">
+                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                       class="col--date col-md-12 col-lg-12 col-12" id="col--date" required/>
+                <label class="label--date--second" for="col--date">Check-out</label>
+              </div>
+            </div>
+            <input type="text" name="guests" id="col--guests" class="col--guests col-md-12 col-lg-12 col-12" required/>
+            <label class="label--guests" for="col--guests">2 Adults &#8212; 0 Children &#8212; 1 Room</label>
+            <button class=" button-search col--button button__text col-md-12 col-md-12 col-12"> Search</button>
+          </div>
+        </form>
+      </article>
     </div>
     <div class="icon-svg">
       <img class="icon-svg-brend" src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917%201.svg" alt="google-play">
