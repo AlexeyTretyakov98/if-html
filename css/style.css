@@ -199,6 +199,8 @@ input{
   margin: 0;
   padding: 0 8px;
 }
+
+
 /* What do we offer */
 
 .advantages {
@@ -1433,6 +1435,10 @@ footer{
 
     .bold {
       font-weight: 600;
+    }
+
+    .icon__col-burger{
+      display: none;
     }
 
   }
