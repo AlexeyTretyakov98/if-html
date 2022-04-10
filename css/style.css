@@ -1296,6 +1296,7 @@ footer{
   }
 
   .tabs{
+    background-color: transparent;
     justify-content: space-between;
     max-width: 600px;
     margin: 24px 0;
